@@ -1,0 +1,43 @@
+# Virtual Environments (Never push dependencies)
+venv/
+env/
+ENV/
+.venv
+
+# Environment Variables (CRITICAL: Never push API keys like OpenAI/Claude)
+.env
+.env.local
+.env.production
+secrets.json
+config.yaml
+*.pem
+
+# AI Models & Outputs (Prevents repo bloat / 100MB limit errors)
+outputs/
+generated_content/
+models/
+checkpoints/
+*.h5
+*.onnx
+*.pt
+*.safetensors
+*.ckpt
+
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# IDEs and OS Files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Logs & Databases
+*.log
+logs/
+*.sqlite3
+*.db
